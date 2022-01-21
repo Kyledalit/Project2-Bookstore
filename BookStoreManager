@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class BookStoreManager {
+
+private:
+  
+  Book[];
+  int nmbrBooks;
+  int Capacity[];
+  static const int INIT_SIZE;
+  static const int RESIZE_FACTOR;
+
+
+public:
+
+  BookstoreManager();
+  BookstoreManager(const BookstoreManager&);
+  ~BookstoreManager();
+
+//Mutator Methods
+  
+  void insert(const Book&){
+  
+  }
+
+  bool remove(const Book&){
+  
+  }
+  
+  int removePublisher(string&){
+  
+  }
+  
+//Observer Methods
+
+  bool isEmpty();
+  unsigned capacity();
+  unsigned listSize();
+  unsigned search(const Book&);
+  string toString();
+  
+
+}
