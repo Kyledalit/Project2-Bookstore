@@ -10,8 +10,8 @@ private:
   Book[];
   int nmbrBooks;
   int Capacity[];
-  static const int INIT_SIZE;
-  static const int RESIZE_FACTOR;
+  static const int INIT_SIZE = 2;
+  static const int RESIZE_FACTOR = 2 * INIT_SIZE;
 
 
 public:
@@ -19,6 +19,8 @@ public:
   BookstoreManager();
   BookstoreManager(const BookstoreManager&);
   ~BookstoreManager();
+  
+  const BookstoreManager& operator= (const BookstoreManager&);
 
 //Mutator Methods
   
@@ -30,7 +32,7 @@ public:
   
   }
   
-  int removePublisher(string&){
+  int removePublisher(const string&){
   
   }
   
