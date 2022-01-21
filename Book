@@ -10,7 +10,44 @@ class Book {
     unsigned int isbn;
     string epublisher;
   
-  public;
-  
+  public:
+    
+    Book[];
+    Book(unsigned int);
+    Book(string&, unsigned int, vector<string>, string&);
+    
+    
+//Mutator Methods
+    void setPublisher(string&) {
+    
+    }
+    void setisbn(unsigned int) {
+    
+    }
+    void setAuthor(int, string&) {
+    
+    }
+    void setTitle (string&) {
+    
+    }
+    
+    
+//Observer Methods
+    string getPublisher() {
+    
+    }
+    int getisbn() {
+    
+    }
+    string getAuthor(unsigned int) {
+    
+    }
+    string getTitle() {
+    
+    }
+    string toString() {
+    
+    }
+    
     
     }
