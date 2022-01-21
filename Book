@@ -8,7 +8,8 @@ class Book {
   private:
     string title;
     unsigned int isbn;
-    string epublisher;
+    vector<string> author;
+    string publisher;
   
   public:
     
@@ -34,18 +35,24 @@ class Book {
     
 //Observer Methods
     string getPublisher() {
-    
+      return publisher;
     }
+    
     int getisbn() {
-    
+      return isbn;
     }
-    string getAuthor(unsigned int) {
     
+    string getAuthor(unsigned int) {
+      
     }
     string getTitle() {
     
     }
     string toString() {
+    cout << getTitle << endl;
+    cout << "by " + getAuthor << endl;
+    cout << getisbn << endl;
+    cout << getPublisher << endl;
     
     }
     
